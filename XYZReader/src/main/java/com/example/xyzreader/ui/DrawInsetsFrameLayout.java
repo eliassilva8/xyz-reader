@@ -31,9 +31,6 @@ import com.example.xyzreader.R;
 
 public class DrawInsetsFrameLayout extends FrameLayout {
     private Drawable mInsetBackground;
-    private Drawable mTopInsetBackground;
-    private Drawable mBottomInsetBackground;
-    private Drawable mSideInsetBackground;
 
     private Rect mInsets;
     private Rect mTempRect = new Rect();
@@ -94,10 +91,6 @@ public class DrawInsetsFrameLayout extends FrameLayout {
         if (mInsetBackground != null) {
             mInsetBackground.setCallback(null);
         }
-    }
-
-    public void setOnInsetsCallback(OnInsetsCallback onInsetsCallback) {
-        mOnInsetsCallback = onInsetsCallback;
     }
 
     @Override
